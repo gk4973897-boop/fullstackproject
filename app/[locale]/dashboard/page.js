@@ -11,6 +11,11 @@ export default async function Dashboard() {
   console.log("found user:", user);
   const posts = await Post.find().sort({ createdAt: -1 }).lean();
   console.log("found posts:", posts);
+  const db = User.db;
+console.log("Database Name:", db.databaseName);
+
+const users = await User.find().lean();
+console.log("Users:", users);
 
   return (
     <main className="min-h-screen bg-gray-100 p-10">
