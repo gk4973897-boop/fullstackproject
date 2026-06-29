@@ -8,7 +8,9 @@ export default async function Dashboard() {
   await connectDB();
 
   const user = await User.findOne({ email: "test@gmail.com" }).lean();
+  console.log("found user:", user);
   const posts = await Post.find().sort({ createdAt: -1 }).lean();
+  console.log("found posts:", posts);
 
   return (
     <main className="min-h-screen bg-gray-100 p-10">
