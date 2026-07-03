@@ -9,14 +9,17 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.3.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.15.0",
     "next": "^15.3.3",
     "next-intl": "^4.3.4",
     "nodemailer": "^6.10.1",
+    "postcss": "^8.5.16",
     "razorpay": "^2.9.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "tailwindcss": "^4.3.2",
     "ua-parser-js": "^1.0.40"
   },
   "devDependencies": {
